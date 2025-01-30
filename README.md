@@ -1,31 +1,31 @@
-# Amharic N-Gram Language Model for Auto-Complete
+## Amharic CBOW Word Embedding Model
 
-This project implements an N-Gram language model for the Amharic language, designed to provide auto-complete functionality. The model uses a simple N-Gram propabilistic model to predict and suggest the most probable next words based on input sequences.
+This project implements the Continuous Bag-of-Words (CBOW) word embedding model for the Amharic language. It learns dense vector representations of Amharic words, useful for downstream NLP tasks like text classification, sentiment analysis, and language modeling.
 
-## Features
+### Features
 
-- **N-Gram Based Predictions**: Supports unigram, bigram, trigram and n-gram models to generate context-aware suggestions.
-- **Amharic Language Support**: Handles the structure and highly morphological nature of Amharic text.
-- **Tokenization**: Includes an Amharic-specific tokenizer to handle words and punctuation correctly.
-- **Smoothing Techniques**: Implements smoothing methods (e.g., Laplace smoothing) to address the issue of zero probabilities.
-- **Scalable Design**: Can be trained on large datasets for improved accuracy.
+- **CBOW-Based Word Embeddings**: Uses the Continuous Bag-of-Words approach to predict context words given a target word.
+- **Amharic Language Support**: Specifically designed for Amharic's structure and morphology.
+- **Pre-trained Embeddings**: Provides pre-trained embeddings on large Amharic corpora.
+- **Tokenization**: Implements an Amharic-specific tokenizer for proper word segmentation.
+- **Embeddings Visualization**: Supports 2D visualization of word embeddings for better exploration of word relationships.
+- **Scalable Design**: Trains on large Amharic corpora for higher-quality embeddings.
 
-## Installation
+### Installation
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yordanoswuletaw/amharic-ngram-autocomplete.git
+   git clone https://github.com/yordanoswuletaw/amharic-cbow-word-embedding.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd amharic-ngram-autocomplete
+   cd amharic-cbow-word-embedding
    ```
 3. Install the required dependencies:
    ```bash
    pip install -r requirements.txt
    ```
 
----
 
 ## Repository Structure
 
@@ -38,8 +38,8 @@ This project implements an N-Gram language model for the Amharic language, desig
 ├── .gitignore                   # Ignored files and folders
 ├── requirements.txt             # Dependencies for the project
 ├── README.md                    # Documentation of the repository
-├── data/                        # Dataset for training, dev and testing
-├── src/                         # Source code for analysis and processing
+├── data/                        # Dataset for training, dev, and testing
+├── src/                         # Source code for training and processing
 ├── notebooks/
 │   ├── __init__.py              # Package initialization
 │   └── README.md                # Documentation for the notebooks
@@ -55,17 +55,14 @@ This project implements an N-Gram language model for the Amharic language, desig
 - Python 3.8+
 - Required Python libraries (see `requirements.txt`)
 
-## Examples
-
-```text
-Input: አበበ በሶ
-Suggestions: በላ
-```
+---
 
 ## Future Work
 
-- Integrate neural language models for amharic langauge tokenization.
-- Expand support for additional Amharic linguistic features and dialects.
+  - Incorporate subword tokenization to better handle complex words.
+  - Extend support to additional Amharic linguistic features such as prefixes and suffixes.
+
+---
 
 ## Contributing
 
@@ -78,7 +75,5 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 ## Acknowledgments
 
 Special thanks to:
-- The Amharic NLP community for providing open-source datasets.
+- The Amharic NLP community for providing open-source datasets and tools.
 
-# amharic-ngram-autocomplete
-# amharic-cbow-word-embedding
