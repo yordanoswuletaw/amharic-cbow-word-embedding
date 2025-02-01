@@ -1,6 +1,6 @@
 ## Amharic CBOW Word Embedding Model
 
-This project implements the Continuous Bag-of-Words (CBOW) word embedding model for the Amharic language. It learns dense vector representations of Amharic words, useful for downstream NLP tasks like text classification, sentiment analysis, and language modeling.
+This project implements the Continuous Bag-of-Words (CBOW) word embedding model for the Amharic and other languages using Python and Numpy. It learns dense vector representations of Amharic words, useful for downstream NLP tasks like text classification, sentiment analysis, and language modeling.
 
 ### Features
 
